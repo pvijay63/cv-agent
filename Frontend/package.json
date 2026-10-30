@@ -1,0 +1,21 @@
+{
+  "name": "cv-job-agent-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+ 
+"scripts": {
+  "dev": "node dev-fullstack.mjs",
+  "build": "vite build",
+  "dev:frontend": "vite --host 127.0.0.1",
+  "dev:backend": "python -m uvicorn backend.main:app --reload --host 127.0.0.1 --port 8002"
+},
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {}
+}
